@@ -262,11 +262,6 @@ ul{
   background-color: var(--color-secondary-background);
   margin-bottom: 30px;
 }
-.features-icons:hover,
-.features-icons:focus {
-  border: 1px solid var(--color-blue);
-  fill: var(--color-blue);
-}
 .basic-anchors{
   font-weight: 700;
   line-height: 1.2;
@@ -437,18 +432,20 @@ img {
 .client-link:focus {
   color: var(--color-blue);
   fill: var(--color-blue);
+  background-color: var(--color-white);
   border-color: var(--color-blue);
 }
 .icon-client {
   color: var(--color-social-network);
   fill: var(--color-social-network);
-  max-width: 106px;
-  max-height: 60px;
+  width: 106px;
+  height: 60px;
 }
 .icon-client:hover,
 .icon-client:focus {
-  stroke: var(--color-blue);
+  color: var(--color-blue);
   fill: var(--color-blue);
+  border-color: var(--color-blue);
 }
 .footer{
   text-decoration: none; 
@@ -512,7 +509,7 @@ img {
   color: var(--color-blue);
 }
 .social-container{
-  vertical-align: middle;
+  align-items: baseline;
   margin-left: 70px;
 }
 .footer-offer {
@@ -591,6 +588,7 @@ margin-right: 10px;
   background-color: var(--color-blue);
   color: var(--color-white);
   border: none;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-cards {
   display: flex;
@@ -636,20 +634,10 @@ margin-right: 10px;
   color: var(--color-secondary-text);
 }
 .link-portfolio{
+  display: block;
   text-decoration: none;
 }
-.portfolio-card:hover {
+.link-portfolio:hover {
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.team.card {
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  background-color: var(--background-color);
-}
-.team.card {
-  transition: all 0.9s;
-}
-.team.card:hover {
-  transform: scale(1.2);
-}
