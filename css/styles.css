@@ -430,12 +430,18 @@ img {
   border-radius: 4px;
 }
 .client-link:hover,
-.client-link:focus,
-.icon-client:hover,
-.icon-client:focus {
-  color: var(--color-blue);
+.client-link:focus {
   fill: var(--color-blue);
-  background-color: var(--color-white);
+  border-color: var(--color-blue);
+}
+.client-link:hover .icon-client,
+.client-link:focus .icon-client{
+  fill: var(--color-blue);
+  border-color: var(--color-blue);
+}
+.icon-client:hover,
+.icon-client:focus{
+  fill: var(--color-blue);
   border-color: var(--color-blue);
 }
 .icon-client {
